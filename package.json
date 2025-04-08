@@ -1,0 +1,23 @@
+{
+  "name": "pre-entrega-2-miguel-agustin-albornoz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelA-Dev/preentrega-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelA-Dev/preentrega-2/issues"
+  },
+  "homepage": "https://github.com/MiguelA-Dev/preentrega-2#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}

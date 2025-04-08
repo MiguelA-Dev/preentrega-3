@@ -1,0 +1,33 @@
+header {
+    background: $color-header;
+  
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      margin-bottom: 20px;
+  
+      li {
+        margin: 30px;
+  
+        a {
+          text-decoration: none;
+          color: $color-texto;
+          font-weight: bold;
+  
+          &.active {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            color: #5a748e;
+          }
+  
+          &:hover {
+            color: #5a748e;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
