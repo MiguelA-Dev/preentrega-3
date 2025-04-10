@@ -1,4 +1,6 @@
-* {
+/* css generales */
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,36 +8,350 @@
 
 body {
   background-color: #eeeeee;
-  font-family: "Nunito", sans-serif;
 }
 
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
 header {
   background: #b5b5b5;
 }
+
 header ul {
   list-style: none;
   display: flex;
   justify-content: center;
   padding: 50px;
+  margin: 0px;
   margin-bottom: 20px;
 }
+
 header ul li {
   margin: 30px;
 }
+
 header ul li a {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
 }
+
 header ul li a.active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   color: #5a748e;
 }
+
 header ul li a:hover {
   color: #5a748e;
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=style.css.map */
+h1 {
+  font-size: 40px;
+  color: #0f1326;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color:#0f1326;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+
+
+/* PAGINA INICIO*/
+
+/*Hero*/
+
+#hero {
+  padding: 50px 20px;
+}
+
+#hero-home .container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+#hero-home .text-home {
+  flex: 1;
+  text-align: center;
+}
+
+#hero-home .img-home{
+  flex: 1;
+  text-align: center;
+}
+#hero-home img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-sizing: content-box;
+  background: white;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #0000004d;
+}
+
+#boton1 {
+  background-color: #1d788a;
+  color: white;
+  box-shadow: 3px 3px 10px #0000004d;
+}
+
+#boton1:hover {
+  background: #0056b3;
+}
+
+/* Segunda seccion*/
+
+#conocimientos {
+  text-align: center;
+  padding: 50px 20px
+}
+
+#conocimientos h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.imagenes-conocimientos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding-bottom: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imagenes-conocimientos img {
+  flex: 0 0 auto;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #0000004d;
+}
+
+/*Tercera secciÃ³n*/
+
+#proyecto-container {
+  text-align: center;
+  padding: 50px 20px;   
+}
+
+.proyectos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.proyecto {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #00000033;
+}
+
+.proyecto img {
+width: 100%;
+border-radius: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #1d788a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#ultimos-proyectos {
+  text-align: center;
+}
+
+/*SecciÃ³n Contacto */
+#contacto {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#contacto h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contacto-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px
+}
+
+.contacto-icons a {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 2px 2px 10px #00000033;
+  transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+/* pÃ¡ginas Landing, academia, blog */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#hero .container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-top: -30px;
+}
+
+#hero img {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  background: white;
+  padding: 25px;
+  box-shadow: 8px 8px 20px #0000006c;
+}
+
+/*pÃ¡gina contacto*/
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #0000001a;
+  padding: 50px;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #e8e8e8;
+}
+
+/* Footer */
+
+
+footer {
+  background-color: #b5b5b5;
+  text-align: center;
+}
+
+/*Mobil - Responsive*/
+
+@media (max-width: 768px) {
+  header ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .proyectos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #hero-home {
+      text-align: center;
+  }
+
+  #hero-home .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #hero-home .img-home {
+      order: 1;
+      width: 100%;
+      text-align: center;
+  }
+
+  #hero-home .img-home img {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  #hero-home .text-home {
+      order: 2;
+      margin-top: 20px;
+  }
+
+  .contacto-icons,
+  form {
+      width: 100%;
+  }
+}
