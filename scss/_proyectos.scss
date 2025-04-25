@@ -1,43 +1,35 @@
 #ultimos-proyectos {
-    text-align: center;
-  }
-  
-  .proyectos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .proyecto {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px #00000033;
-  }
-  
-  .proyecto img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  h3 {
-    margin-top: 10px;
-  }
-  
-  button {
-    background-color: #1d788a;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
+  text-align: center;
+}
+
+.proyectos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  @extend %card-base; 
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.proyecto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+button {
+  @include boton($color-principal, white); 
+  margin-top: 10px;
+}
+
+button:hover {
+  background: $color-principal-hover;
+}
